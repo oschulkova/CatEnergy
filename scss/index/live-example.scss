@@ -1,0 +1,14 @@
+.main__live-example{
+    background-color: rgba(234, 234, 234, 1);
+}
+
+.main__live-example__wrapper-info{
+    width:280px;
+    margin:0 auto;
+    @media (min-width:$tablet_width){
+        width:708px;
+    }
+    @media (min-width:$desktop_width){
+        width:1220px;
+    }
+}

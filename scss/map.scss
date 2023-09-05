@@ -1,0 +1,95 @@
+.main__address__wrapper{
+    width:90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    @media (min-width:$desktop_width) {
+        position: absolute;
+        width: 565px;
+        height:198px;
+        top: 95px;
+        left:110px;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.main__address__wrapper__img{
+    height: 474px;
+    width:100%;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top:112px;
+        left:0;
+        background-image: url(../img/map_mobile.png);
+        height: 362px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (min-width:$tablet_width) {
+        height: 600px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top:199px;
+            left:0;
+            background-image: url(../img/map_tablet.png);
+            height:400px;
+        } 
+    }
+    @media (min-width:$desktop_width) {
+        height: 400px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top:0;
+            left:0;
+            background-image: url(../img/map_desktop.png);
+            height:400px;
+        } 
+    }
+}
+
+.main__address__info{
+    margin-top:26px;
+    margin-bottom: 26px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px; 
+    p{
+        margin:0;
+    }
+    @media (min-width:$tablet_width) {
+        font-size: 16px; 
+        margin-top:56px;
+        margin-bottom: 63px;
+        margin-right: 40px;
+        text-align: end;
+    }
+}
+
+.main__addrwss__info__title{
+    margin-top:26px;
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:rgba(17, 17, 17, 1);
+    text-transform: uppercase;
+    @media (min-width:$tablet_width) {
+        font-size: 20px;
+        line-height: 26px; 
+        margin-top:60px;
+        margin-bottom: 56px;
+        margin-left: 40px;
+    }
+}
+
+.main__address__dark{
+    background-color: rgba(242, 242, 242, 1);
+}
